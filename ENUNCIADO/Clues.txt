@@ -1,0 +1,26 @@
+
+//Creando una lista
+
+private val alignYourBodyData = listOf(
+    R.drawable.nombre1 to R.string.nombre1,
+    R.drawable.nombre2 to R.string.nombre2,
+    R.drawable.nombreN to R.string.nombreN
+).map { DrawableStringPair(it.first, it.second) }
+
+
+//Creando un tipo de dato
+
+private data class DrawableStringPair(
+    @DrawableRes val drawable: Int,
+    @StringRes val text: Int
+)
+
+
+// Creando un string en resources
+
+<string name="nombre1">Story1</string>
+
+
+//Pista, esto va en algún lado
+
+implementation("androidx.navigation:navigation-compose:2.8.4")
